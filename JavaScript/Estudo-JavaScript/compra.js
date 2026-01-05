@@ -95,17 +95,17 @@ function Produto(codigo, nome, preco){
 
 const meuCarrinho = new CarrinhoDeCompras();
 
-meuCarrinho.adicionarProduto({codigo: 001, nome: 'Leite Integral 1L', preco: 3.25}, 4);
+meuCarrinho.adicionarProduto({codigo: 0o1, nome: 'Leite Integral 1L', preco: 3.25}, 4);
 
-meuCarrinho.adicionarProduto(new Produto(002, 'Óleo de Soja 900ml', 7.98), 2);
+meuCarrinho.adicionarProduto(new Produto(0o2, 'Óleo de Soja 900ml', 7.98), 2);
 
 // adicionar uma lista 
-let produtoA = {produto: new Produto(003, 'Arroz 5kg', 22.99), quantidade: 1};
-let produtoB = {produto: new Produto(004, 'Molho de Tomate 350g', 2.49), quantidade: 2};
+let produtoA = {produto: new Produto(0o3, 'Arroz 5kg', 22.99), quantidade: 1};
+let produtoB = {produto: new Produto(0o4, 'Molho de Tomate 350g', 2.49), quantidade: 2};
 const meusItens = [produtoA, produtoB];
 
-produtoA = {produto: new Produto(005, 'Açúcar Cristal 5kg', 12.98), quantidade: 1};
-produtoB = {produto: new Produto(006, 'Sal Refinado 1kg', 2.19), quantidade: 1};
+produtoA = {produto: new Produto(0o5, 'Açúcar Cristal 5kg', 12.98), quantidade: 1};
+produtoB = {produto: new Produto(0o6, 'Sal Refinado 1kg', 2.19), quantidade: 1};
 meuCarrinho.adicionarProdutos(meusItens);
 
 meuCarrinho.adicionarProdutos([produtoA, produtoB]);
